@@ -48,19 +48,16 @@ class CommonBuilder extends Builder {
     @Override
     void buildBasic() {
         house.basic="common basic";
-        System.out.println("commonBuilder bulid basic");
     }
 
     @Override
     void buildWalls() {
         house.walls="common walls";
-        System.out.println("commonBuilder bulid walls");
     }
 
     @Override
     void roofed() {
         house.roofed="common roofed";
-        System.out.println("commonBuilder roofed");
     }
 }
 
@@ -69,19 +66,16 @@ class GreatBuilder extends Builder {
     @Override
     void buildBasic() {
         house.basic="great basic";
-        System.out.println("greatBuilder bulid basic");
     }
 
     @Override
     void buildWalls() {
         house.walls="great walls";
-        System.out.println("greatBuilder bulid walls");
     }
 
     @Override
     void roofed() {
         house.roofed="great roofed";
-        System.out.println("greatBuilder roofed");
     }
 }
 
