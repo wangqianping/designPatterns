@@ -1,4 +1,4 @@
-package principles;
+package patterns;
 
 /**
  * 桥接模式

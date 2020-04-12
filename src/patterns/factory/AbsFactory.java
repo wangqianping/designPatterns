@@ -1,4 +1,4 @@
-package principles.factory;
+package patterns.factory;
 
 /**
  * 抽象工厂设计模式

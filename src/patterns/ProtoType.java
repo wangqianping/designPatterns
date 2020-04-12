@@ -1,4 +1,4 @@
-package principles;
+package patterns;
 
 import java.io.*;
 

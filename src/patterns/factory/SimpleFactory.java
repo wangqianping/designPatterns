@@ -1,4 +1,4 @@
-package principles.factory;
+package patterns.factory;
 
 /**
  * 简单工厂模式

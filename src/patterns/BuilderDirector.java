@@ -1,4 +1,4 @@
-package principles;
+package patterns;
 
 /**
  * 建造者模式

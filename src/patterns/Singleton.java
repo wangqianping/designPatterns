@@ -1,4 +1,4 @@
-package principles;
+package patterns;
 
 /**
  * 单例模式

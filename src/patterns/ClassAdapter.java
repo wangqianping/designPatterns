@@ -1,4 +1,4 @@
-package principles;
+package patterns;
 
 /**
  * 适配器模式
