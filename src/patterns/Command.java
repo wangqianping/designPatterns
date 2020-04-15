@@ -3,6 +3,9 @@ package patterns;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 命令模式
+ */
 public interface Command {
     void excute();
 
