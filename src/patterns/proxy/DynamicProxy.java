@@ -13,26 +13,25 @@ public class DynamicProxy {
     }
 
     public Object getProxyInstance() {
-//        return new Proxy.newProxyInstance(
-//                object.getClass().getClassLoader(),
-//                object.getClass().getInterfaces(),
-//                new InvocationHandler() {
-//                    @Override
-//                    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-//                        System.out.println("这是动态代理模式");
-//                        Object invoke = method.invoke(proxy, args);
-//                        return invoke;
-//                    }
-//                });
-        return null;
+        return  Proxy.newProxyInstance(
+                object.getClass().getClassLoader(),
+                object.getClass().getInterfaces(),
+                new InvocationHandler() {
+                    @Override
+                    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                        System.out.println("这是动态代理模式");
+                        Object invoke = method.invoke(object, args);
+                        return invoke;
+                    }
+                });
     }
 }
 
 class TestDynamicProxy {
     public static void main(String[] args) {
-        TeacherDao teacherDao = new TeacherDao();
+        IteacherDao teacherDao = new TeacherDao();
         DynamicProxy dynamicProxy = new DynamicProxy(teacherDao);
-        TeacherDao instance = (TeacherDao) dynamicProxy.getProxyInstance();
+        IteacherDao instance = (IteacherDao) dynamicProxy.getProxyInstance();
         instance.teach();
     }
 }
